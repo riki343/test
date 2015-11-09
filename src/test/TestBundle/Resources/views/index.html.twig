@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+
+<html ng-app="test">
+
+    <head>
+        <link rel="stylesheet" href="{{ asset('stylesheets/index.css') }}">
+
+        {% javascripts
+            '@vendor'
+            '@module'
+            '@service'
+            '@controller'
+            output="/production/js/all.js"
+        %}
+            <script src="{{ asset_url }}"></script>
+        {% endjavascripts %}
+    </head>
+
+    <body>
+        <div ng-controller="indexController as index">
+            <form name="uploadForm" enctype="multipart/form-data" ng-submit="index.upload();" novalidate method="POST">
+                <div class="upload-group">
+                    <label for="upload-input" class="button">
+                        Upload new File
+                    </label>
+                    <input id="upload-input" type="file" ng-model="index.model.file">
+                </div>
+
+                <button type="submit" class="button">Submit</button>
+            </form>
+
+            <ul>
+                <li ng-repeat="file in index.uploadedFiles" ng-bind="file"></li>
+            </ul>
+        </div>
+    </body>
+
+</html>

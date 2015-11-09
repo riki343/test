@@ -1,0 +1,26 @@
+.upload-group {
+    margin: 20px auto;
+}
+
+/*.upload-group > label.button {}*/
+
+/*.upload-group > label:hover {}*/
+
+.upload-group > input[type='file'] {
+    position: absolute;
+    left: -99999999px;
+}
+
+.button {
+    background-color: white;
+    color: cornflowerblue;
+    padding: 10px 5px;
+    border: solid darkgray 1px;
+    cursor: pointer;
+    transition: 0.5s linear background-color, color;
+}
+
+.button:hover {
+    background-color: crimson;
+    color: whitesmoke;
+}

@@ -1,0 +1,3 @@
+services:
+    test.uploader:
+        class: test\TestBundle\Services\Uploader

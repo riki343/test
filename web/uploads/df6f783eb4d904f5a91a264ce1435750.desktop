@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Battle.net Launcher
+Comment=PlayOnLinux
+Type=Application
+Exec=/usr/share/playonlinux/playonlinux --run "Battle.net Launcher" %F
+Icon=/home/riki34/.PlayOnLinux//icones/full_size/Battle.net Launcher
+Name[fr_FR]=Battle.net Launcher
+StartupWMClass=Battle.net Launcher.exe
+Categories=

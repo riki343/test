@@ -1,0 +1,16 @@
+assetic:
+    assets:
+        vendor:
+            inputs:
+                'javascripts/vendor/AngularJS/angular.min.js'
+        module:
+            inputs:
+                'javascripts/custom/module.js'
+
+        service:
+            input:
+                'javascripts/custom/service/*'
+
+        controller:
+            inputs:
+                'javascripts/custom/controller/*'
